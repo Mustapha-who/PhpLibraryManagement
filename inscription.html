@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+</head>
+<body style="text-align:center;">
+<form name='f' method="post" action="inscription.php">
+	<h1 style="color: blue;margin-top: 8%;">Formulaire d'inscription</h1>
+	<table border="2" style="text-align:center; margin: auto; margin-top: 40px;height: 200px;">
+	<tr>
+		<td>Votre nom</td>
+		<td><input type='text' name='nom'></td>
+	</tr>
+	<tr>
+		<td>Votre prenom</td>
+		<td><input type='text' name='prenom'></td>
+	</tr>
+	<tr>
+		<td>Date de naissance</td>
+		<td><input type='Date' name='d'></td>
+	</tr>
+	<tr>
+		<td>Sexe</td>
+		<td>
+			<input type='radio' name='r' value="Féminin">Féminin
+			<input type='radio' name='r' value="Masculin">Masculin
+		</td>
+	</tr>
+	<tr>
+		<td>Etat civil</td>
+		<td>
+			<select name ='slct'>
+			<option></option>
+			<option>Célebataire</option>
+			<option>Marié(e)</option>
+			<option>divorcé(e)</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan='2'>
+			<input type='submit' name='s' value="S'inscrire">
+			<input type='reset' name='res' value='Annuler'>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

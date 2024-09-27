@@ -1,0 +1,96 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">S’inscrire</h2>
+                        <form method="post" action="inscription.php" class="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="nom" id="nom" placeholder="Prenom"/>
+                            </div>
+                        
+                            
+                            <div class="form-group">
+                                <label for="Your nickname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="prenom" id="prenom" placeholder="Nom de famille"/>
+                            </div>
+
+
+
+                            <div class="form-group" >
+                                <input type='Date' name='d' style="margin-left:-8%;">
+                            </div>
+
+
+                            <div class="form-group">
+                                <p>Homme</p><input type='radio' name='r' value="Homme" style="margin-top: -5%;">
+                                <p style="margin-top:4%;">Femme</p><input type='radio' name='r' value="Femme" style="margin-top: -7%;">
+                                </div>
+
+
+                               <h6>Etat civil</h6>
+                            <div class="form-group">
+                                <select name ='slct'>
+                                    
+                                    <option>Célebataire</option>
+                                    <option>Marié(e)</option>
+                                    </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="mdp" id="pass" placeholder="Nouveau mot de passe"/>
+                            </div>
+
+
+
+                           
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="mdp2" id="re_pass" placeholder="Repetez votre mot de passe"/>
+                            </div>
+                           
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="S’inscrire"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="login.html" class="signup-image-link">Je suis deja membre</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
